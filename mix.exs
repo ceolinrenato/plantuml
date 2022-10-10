@@ -6,7 +6,7 @@ defmodule Plantuml.MixProject do
       name: "Plantuml",
       source_url: "https://github.com/ceolinrenato/plantuml",
       app: :plantuml,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: ">= 1.12.3",
       start_permanent: Mix.env() == :prod,
       deps: deps(),

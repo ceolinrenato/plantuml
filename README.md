@@ -5,7 +5,7 @@ The goal of this project is implement [PlantUML](https://plantuml.com/) tooling 
 Right now it has:
 
 - Encoding/Decoding of diagrams [https://plantuml.com/text-encoding](https://plantuml.com/text-encoding)
-- Mix task to generate links with embedded diagrams pointing to a PlantUML web server (defaults to `https://plantuml.com/plantuml`)
+- Mix task to generate links with embedded diagrams pointing to a PlantUML web server
 
 ## Installation
 
@@ -18,6 +18,18 @@ def deps do
   ]
 end
 ```
+
+## Configuration
+
+You can host your own instance of PlantUML server [https://plantuml.com/server](https://plantuml.com/server).
+
+There's also a Docker image available on: [https://hub.docker.com/r/plantuml/plantuml-server/](https://hub.docker.com/r/plantuml/plantuml-server/).
+
+```elixir
+config :plantuml, plantuml_server_url: "https://your-hosted-plantuml-server.com"
+```
+
+The default server url used is `https://plantuml.com/plantuml`.
 
 ## Documentation
 

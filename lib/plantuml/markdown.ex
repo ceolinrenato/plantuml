@@ -46,8 +46,11 @@ defmodule Plantuml.Markdown do
 
         encoded_diagram = Plantuml.Encoding.encode(diagram)
 
-        "#{link_description}(https://plantuml.com/plantuml/png/#{encoded_diagram})<!--#{link_description}(#{diagram_path})-->"
+        "#{link_description}(#{plantuml_server_url()}/png/#{encoded_diagram})<!--#{link_description}(#{diagram_path})-->"
       end
     )
   end
+
+  defp plantuml_server_url,
+    do: Application.get_env(:plantuml, :plantuml_server_url, "https://plantuml.com/plantuml")
 end
