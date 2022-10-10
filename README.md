@@ -26,7 +26,7 @@ The docs can be found at <https://hexdocs.pm/plantuml>.
 ## Auto update markdown files
 
 Running `mix plantuml.generate_markdown_links` on the project will search for all markdown files and look for markdown comments
-with links referencing to a PlantUML file in the project.
+with links referencing to a PlantUML file in the project (`Mix.Tasks.Plantuml.GenerateMarkdownLinks`).
 
 This feature was inspired by [https://github.com/danielyaa5/puml-for-markdown](https://github.com/danielyaa5/puml-for-markdown), a CLI tool built with JavaScript.
 
