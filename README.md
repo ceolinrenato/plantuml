@@ -14,7 +14,7 @@ The package can be installed by adding `plantuml` to your list of dependencies i
 ```elixir
 def deps do
   [
-    {:plantuml, "~> 0.1.0-dev"}
+    {:plantuml, "~> 0.1.0"}
   ]
 end
 ```
