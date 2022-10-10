@@ -28,7 +28,7 @@ defmodule Mix.Tasks.Plantuml.GenerateMarkdownLinks do
 
   use Mix.Task
 
-  @excluded [~r"/_build/", ~r"/deps/", ~r"/node_modules/", ~r"/priv/"]
+  @excluded [~r"/_build/", ~r"/deps/", ~r"/node_modules/", ~r"/priv/", ~r"/plantuml/README.md"]
 
   def run(_) do
     markdown_files()
