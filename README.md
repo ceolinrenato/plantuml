@@ -9,8 +9,6 @@ Right now it has:
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish)
-
 The package can be installed by adding `plantuml` to your list of dependencies in `mix.exs`:
 
 ```elixir
@@ -58,4 +56,4 @@ Result:
 
 ## Contributing
 
-See our [contribution guidelines](./CONTRIBUTING.md) and our [code of conduct](./CODE_OF_CONDUCT.md)
+See our [contribution guidelines](https://github.com/ceolinrenato/plantuml/blob/main/CONTRIBUTING.md) and our [code of conduct](https://github.com/ceolinrenato/plantuml/blob/main/CODE_OF_CONDUCT.md)
