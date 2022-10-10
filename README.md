@@ -69,3 +69,7 @@ Result:
 ## Contributing
 
 See our [contribution guidelines](https://github.com/ceolinrenato/plantuml/blob/main/CONTRIBUTING.md) and our [code of conduct](https://github.com/ceolinrenato/plantuml/blob/main/CODE_OF_CONDUCT.md)
+
+## Changelog
+
+[Changelog](https://github.com/ceolinrenato/plantuml/blob/main/CHANGELOG.md)
