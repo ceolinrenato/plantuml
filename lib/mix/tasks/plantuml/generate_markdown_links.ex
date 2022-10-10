@@ -1,4 +1,4 @@
-defmodule Mix.Tasks.Markdown.GeneratePlantumlLinks do
+defmodule Mix.Tasks.Plantuml.GenerateMarkdownLinks do
   @shortdoc "Updates all markdown files to include links with embedded PlantUML diagrams."
 
   @moduledoc """
