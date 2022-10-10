@@ -1,4 +1,6 @@
 defmodule Mix.Tasks.Markdown.GeneratePlantumlLinks do
+  @shortdoc "Updates all markdown files to include links with embedded PlantUML diagrams."
+
   @moduledoc """
   Searches the project for markdown files and updates them to include links with
   embedded PlantUML diagrams whenever there's a markdown comment refering a plantuml
@@ -28,7 +30,6 @@ defmodule Mix.Tasks.Markdown.GeneratePlantumlLinks do
 
   @excluded [~r"/_build/", ~r"/deps/", ~r"/node_modules/", ~r"/priv/"]
 
-  @shortdoc "Updates all markdown files to include links with embedded PlantUML diagrams."
   def run(_) do
     markdown_files()
     |> Enum.map(fn file_path ->
