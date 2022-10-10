@@ -11,6 +11,10 @@ defmodule Plantuml.Encoding.Deflate do
   @plantuml_mapping '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'
 
   @impl Plantuml.Encoding
+  @doc """
+  Encodes `diagram` using deflate method.
+  """
+  @spec encode(diagram :: String.t()) :: encoded_diagram :: String.t()
   def encode(diagram) do
     diagram
     |> :zlib.zip()
@@ -19,6 +23,10 @@ defmodule Plantuml.Encoding.Deflate do
   end
 
   @impl Plantuml.Encoding
+  @doc """
+  Decodes `encoded_diagram` thtat was encoded using deflate method.
+  """
+  @spec decode(encoded_diagram :: String.t()) :: diagram :: String.t()
   def decode(encoded_diagram) do
     encoded_diagram
     |> translate(@plantuml_mapping, @base64_mapping)
