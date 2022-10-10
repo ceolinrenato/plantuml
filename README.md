@@ -55,3 +55,7 @@ You can also render a link to a diagram, by doing the same thing but without pre
 Result:
 
 [Link to Diagram](https://plantuml.com/plantuml/png/JP4v3iCW44NxEGKNI16lKeh8MUj4oWKmfa1om86XyEs36JiP2dZwJupueWieFSRt25CwZJAJj2WUZ6KGT-T0AdHUq3en9hs7taKxI3ylsPan-GAKi-ZTcEzS69ClGLiqEDFC6sFo5GmIPI-3Nh8hO_9rcZ-EMg5nDgJvVoRVm2VggDStFncJRo5jOdVCNSH1l9p8XLbSKBprPAOaipPaeY91rLXUKxvLOgRPHlqACDbcbuj0f-sm_DeN)
+
+## Contributing
+
+See our [contribution guidelines](./CONTRIBUTING.md) and our [code of conduct](./CODE_OF_CONDUCT.md)
