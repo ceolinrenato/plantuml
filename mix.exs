@@ -3,11 +3,17 @@ defmodule Plantuml.MixProject do
 
   def project do
     [
+      name: "Plantuml",
+      source_url: "https://github.com/ceolinrenato/plantuml",
       app: :plantuml,
-      version: "0.1.0",
+      version: "0.1.0-dev",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      docs: [
+        main: "readme",
+        extras: ["README.md"]
+      ]
     ]
   end
 
@@ -21,7 +27,8 @@ defmodule Plantuml.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:credo, "~> 1.6", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
+      {:ex_doc, "~> 0.27", only: :dev, runtime: false}
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]

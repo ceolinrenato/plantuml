@@ -8,6 +8,10 @@ defmodule Plantuml.Encoding.Hex do
   @behaviour Plantuml.Encoding
 
   @impl Plantuml.Encoding
+  @doc """
+  Encodes `diagram` using hex method.
+  """
+  @spec encode(diagram :: String.t()) :: encoded_diagram :: String.t()
   def encode(diagram) do
     diagram
     |> String.to_charlist()
@@ -15,6 +19,10 @@ defmodule Plantuml.Encoding.Hex do
   end
 
   @impl Plantuml.Encoding
+  @doc """
+  Decodes `encoded_diagram` thtat was encoded using hex method.
+  """
+  @spec decode(encoded_diagram :: String.t()) :: diagram :: String.t()
   def decode(encoded_diagram) do
     encoded_diagram
     |> String.to_charlist()

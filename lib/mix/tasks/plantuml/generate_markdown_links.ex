@@ -1,4 +1,4 @@
-defmodule Mix.Tasks.Markdown.GeneratePlantumlLinks do
+defmodule Mix.Tasks.Plantuml.GenerateMarkdownLinks do
   @shortdoc "Updates all markdown files to include links with embedded PlantUML diagrams."
 
   @moduledoc """
@@ -28,7 +28,7 @@ defmodule Mix.Tasks.Markdown.GeneratePlantumlLinks do
 
   use Mix.Task
 
-  @excluded [~r"/_build/", ~r"/deps/", ~r"/node_modules/", ~r"/priv/"]
+  @excluded [~r"/_build/", ~r"/deps/", ~r"/node_modules/", ~r"/priv/", ~r"/plantuml/README.md"]
 
   def run(_) do
     markdown_files()
