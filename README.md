@@ -9,7 +9,8 @@ Right now it has:
 
 ## Installation
 
-The package can be installed by adding `plantuml` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `plantuml` to your list of dependencies in `mix.exs`, you don't need to include it
+on runtime if you're just using the mix task.
 
 ```elixir
 def deps do
@@ -18,6 +19,15 @@ def deps do
   ]
 end
 ```
+
+But if you need to Encode/Decode diagrams on application runtime you can add the following to your deps:
+
+```elixir
+def deps do
+  [
+    {:plantuml, "~> 0.1"}
+  ]
+end
 
 ## Configuration
 
