@@ -28,6 +28,7 @@ def deps do
     {:plantuml, "~> 0.1"}
   ]
 end
+```
 
 ## Configuration
 
