@@ -42,6 +42,12 @@ config :plantuml, plantuml_server_url: "https://your-hosted-plantuml-server.com"
 
 The default server url used is `https://plantuml.com/plantuml`.
 
+You can also use [Kroki.io](https://kroki.io) public server, this one supports SSL
+
+```elixir
+config :plantuml, plantuml_server_url: "https://kroki.io/plantuml"
+```
+
 ## Documentation
 
 The docs can be found at <https://hexdocs.pm/plantuml>.
